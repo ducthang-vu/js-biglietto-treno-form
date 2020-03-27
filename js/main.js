@@ -44,7 +44,7 @@ bottoneGenera.addEventListener('click',
         }
 
         // Controllo dei decimali
-        costoBiglietto = costoBiglietto.toFixed(2) + '€';
+        costoBiglietto = '€ ' + costoBiglietto.toFixed(2);
 
         // Numero random per la carrozza da 1 a 9
         var numCarrozza = Math.floor( Math.random() * 9) + 1;
