@@ -1,4 +1,13 @@
 /* GENERAL */
+html {
+    scroll-behavior: smooth;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +17,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 
 /* UTILITIES */
 .container {
@@ -118,23 +128,33 @@ body {
     color: #fff;
 }
 
-.row #bottoneAnnulla {
-    order: -1;
-}
 
 /* BIGLIETTO */
 #biglietto {
-    padding: 10px 10px 30px;
+    padding: 10px 10px 40px;
 }
 
 .biglietto-header {
-    margin-bottom: 10px;
-    
+    margin-bottom: 30px;
+}
+
+.biglietto-header:after {
+    position: absolute;
+    bottom: -10px;
+    transform: translateX(-50%);
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: black;
+}
+
+.contenuti h2 {
+    font-size: 90%;
 }
 
 #nome-passeggero {
     margin-bottom: 20px;
-    font-size: 200%;
+    font-size: 250%;
 }
 
 .offerta-table {
