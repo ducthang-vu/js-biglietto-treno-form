@@ -9,28 +9,28 @@
 </head>
 <body>
     
-    <div class="wrapper pale-yellow">
-        <header class="header container pale-green">
+    <div class="wrapper">
+        <header class="header container">
             <h1 class="title text-center">Calcola il prezzo del tuo biglietto</h1>
         </header>
 
         <div class="dati-input container">
             <div class="row">
-                <div class="col flex">
+                <div class="col flex f-wrap">
                     <label for="nome">Nome e cognome</label>
                     <input id="nome" type="text" 
                            name="nome"
                             placeholder="inserisci il tuo nome"
                     >
                 </div>
-                <div class="col flex">
+                <div class="col flex f-wrap">
                     <label for="km">Km da percorrere</label>
                     <input id="km" type="number" min="1" max="300"
                            name="km"
                             placeholder="inserisci i Km"
                     >
                 </div>
-                <div class="col flex">
+                <div class="col flex f-wrap">
                     <label for="fascia-eta">Fascia d'età</label>
                     <select name="fascia-eta" id="fascia-eta">
                         <option value="minorenne" >Minorenne</option>
@@ -40,13 +40,13 @@
                 </div>
             </div>
 
-            <div class="row flex">
+            <div class="row flex f-wrap">
                 <button class="btn green" id="bottoneGenera">Genera</button>
                 <button class="btn red" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
 
-        <section id="biglietto" class="hidden container text-center pale-purple">
+        <section id="biglietto" class="hidden container text-center pale-yellow">
             <hgroup class="biglietto-header">
                 <h2 class="title">Il tuo biglietto</h2>
                 <h3>Dettagli passeggeri</h3>

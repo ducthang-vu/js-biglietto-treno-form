@@ -11,7 +11,7 @@ body {
 
 /* UTILITIES */
 .container {
-    padding: 10px;
+    padding: 3px;
 }
 
 .pale-green {
@@ -38,6 +38,10 @@ body {
     display: flex;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 .central {
     margin: auto;
 }
@@ -57,9 +61,9 @@ body {
 
 /* HEADER */
 .header {
-    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    color: red;
 }
-
 
 
 /* DATI-INPUT */
@@ -67,39 +71,51 @@ body {
     padding-bottom: 30px;
 }
 
-.col {
+.row:first-child {
+    padding: 10px;
+}
+
+.row:last-child {
     padding: 10px 0;
+    justify-content: space-around;
+}
+
+
+.col {
+    padding: 10px;
+    justify-content: center;
     align-items: center;
 }
 
-.col > label {
-    flex-basis: 35%;
+.col:not(:last-child) > label {
+    flex-basis: 100%;
+    margin-bottom: 10px;
 }
 
 .col > input {
-    flex-basis: 65%;
-    border:none;
+    flex-basis: 100%;
+    border: none;
     border-bottom: 1px solid #ccc;
     padding: 5px 5px 5px 10px;
 }
 
+.col:last-child > * {
+    margin: 10px;
+}
+
 .col > select {
-    height: 38px;
-    padding: 0 10px;
+    padding: 5px;
     border:none;
     border-bottom: 1px solid #ccc;
 }
 
-.row {
-    padding: 10px;
-    justify-content: space-around;
-}
-
 .row .btn {
-    padding: 15px;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    padding: 10px 15px;
     font-size: 120%;
     font-weight: 700;
-    border-radius: 10px;
+    color: #fff;
 }
 
 .row #bottoneAnnulla {
@@ -108,12 +124,12 @@ body {
 
 /* BIGLIETTO */
 #biglietto {
-    padding-bottom: 30px;
-    border-radius: 20px 20px 0 0;
+    padding: 10px 10px 30px;
 }
 
 .biglietto-header {
     margin-bottom: 10px;
+    
 }
 
 #nome-passeggero {
