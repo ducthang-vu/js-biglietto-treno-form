@@ -10,6 +10,10 @@ body {
 }
 
 /* UTILITIES */
+.container {
+    padding: 10px;
+}
+
 .green {
     background: rgb(0, 128, 0);
 }
@@ -35,22 +39,16 @@ body {
 }
 
 .hidden {
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 
 /* HEADER */
-.header {
-    padding: 10px;
-}
 
 
 
 
 /* DATI-INPUT */
-.dati-input {
-    padding: 10px;
-}
 
 .col {
     padding: 10px 0;
@@ -88,7 +86,8 @@ body {
 }
 
 .row #bottoneAnnulla {
-    order: 0;
+    order: -1;
 }
 
 /* BIGLIETTO */
+#biglietto > title 
