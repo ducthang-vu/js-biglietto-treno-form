@@ -10,25 +10,27 @@
 <body>
     
     <div class="wrapper">
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <header class="header">
+            <h1 class="title text-center">Calcola il prezzo del tuo biglietto</h1>
+        </header>
 
         <div class="dati-input">
             <div class="row">
-                <div class="col">
-                    <label for="nome">Nome e Cognome</label>
+                <div class="col flex">
+                    <label for="nome">Nome e cognome</label>
                     <input id="nome" type="text" 
                            name="nome"
                             placeholder="inserisci il tuo nome"
                     >
                 </div>
-                <div class="col">
+                <div class="col flex">
                     <label for="km">Km da percorrere</label>
                     <input id="km" type="number" min="1" max="300"
                            name="km"
                             placeholder="inserisci i Km"
                     >
                 </div>
-                <div class="col">
+                <div class="col flex">
                     <label for="fascia-eta">Fascia d'età</label>
                     <select name="fascia-eta" id="fascia-eta">
                         <option value="minorenne" >Minorenne</option>
@@ -38,9 +40,9 @@
                 </div>
             </div>
 
-            <div class="row">
-                <button class="btn" id="bottoneGenera">Genera</button>
-                <button class="btn" id="bottoneAnnulla">Annulla</button>
+            <div class="row flex">
+                <button class="btn green" id="bottoneGenera">Genera</button>
+                <button class="btn red" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
 

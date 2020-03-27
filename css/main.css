@@ -9,8 +9,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* UTILITIES */
+.green {
+    background: rgb(0, 128, 0);
+}
+
+.red {
+    background: rgb(255, 0, 0);
+}
+
 .flex {
     display: flex;
 }
@@ -30,3 +37,58 @@ body {
 .hidden {
     opacity: 0;
 }
+
+
+/* HEADER */
+.header {
+    padding: 10px;
+}
+
+
+
+
+/* DATI-INPUT */
+.dati-input {
+    padding: 10px;
+}
+
+.col {
+    padding: 10px 0;
+    align-items: center;
+}
+
+.col > label {
+    flex-basis: 40%;
+}
+
+.col > input {
+    flex-basis: 60%;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 5px 5px 10px;
+}
+
+.col > select {
+    height: 38px;
+    padding: 0 10px;
+    border:none;
+    border-bottom: 1px solid #ccc;
+}
+
+.row {
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.row .btn {
+    padding: 15px;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.row #bottoneAnnulla {
+    order: 0;
+}
+
+/* BIGLIETTO */
