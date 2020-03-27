@@ -60,7 +60,8 @@ bottoneGenera.addEventListener('click',
         document.getElementById('costo').innerHTML = costoBiglietto;
 
         // Mostra biglietto
-        container.className = 'show';
+        container.classList.remove('hidden')
+        container.classList += ' show'
     }   
 );
 
@@ -73,13 +74,14 @@ buttonCancel.addEventListener('click',
         document.getElementById('km').value = ''
         document.getElementById('fascia-eta').value = 'minorenne'
 
-        container.className = 'hidden';
+        container.classList.remove('show')
+        container.classList += ' hidden'
 
-        document.getElementById('nome-passeggero').innerHTML = '';
-        document.getElementById('offerta-applicata').innerHTML = '';
-        document.getElementById('carrozza').innerHTML = '';
-        document.getElementById('codice-cp').innerHTML = '';
-        document.getElementById('costo').innerHTML = '';
+        document.getElementById('nome-passeggero').innerHTML = ''
+        document.getElementById('offerta-applicata').innerHTML = ''
+        document.getElementById('carrozza').innerHTML = ''
+        document.getElementById('codice-cp').innerHTML = ''
+        document.getElementById('costo').innerHTML = ''
     }
 )
 

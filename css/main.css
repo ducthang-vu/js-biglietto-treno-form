@@ -90,4 +90,7 @@ body {
 }
 
 /* BIGLIETTO */
-#biglietto > title 
+.offerta th,
+.offerta td {
+    width: 25%;
+}
