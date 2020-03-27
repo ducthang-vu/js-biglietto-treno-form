@@ -68,11 +68,18 @@ bottoneGenera.addEventListener('click',
 // Reset biglietto
 buttonCancel.addEventListener('click', 
     function() {
+        // A function resetting to default value input and select elements
         document.getElementById('nome').value = ''
         document.getElementById('km').value = ''
         document.getElementById('fascia-eta').value = 'minorenne'
 
         container.className = 'hidden';
+
+        document.getElementById('nome-passeggero').innerHTML = '';
+        document.getElementById('offerta-applicata').innerHTML = '';
+        document.getElementById('carrozza').innerHTML = '';
+        document.getElementById('codice-cp').innerHTML = '';
+        document.getElementById('costo').innerHTML = '';
     }
 )
 
