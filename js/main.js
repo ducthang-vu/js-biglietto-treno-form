@@ -7,7 +7,7 @@
  */
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
-
+var buttonCancel = document.getElementById('bottoneAnnulla')
 
 
 /**
@@ -64,7 +64,15 @@ bottoneGenera.addEventListener('click',
     }   
 );
 
+
 // Reset biglietto
+buttonCancel.addEventListener('click', 
+    function() {
+        document.getElementById('nome').value = ''
+        document.getElementById('km').value = ''
+        document.getElementById('fascia-eta').value = 'minorenne'
 
-
+        container.className = 'hidden';
+    }
+)
 
