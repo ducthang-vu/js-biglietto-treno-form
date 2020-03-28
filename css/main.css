@@ -259,7 +259,7 @@ button:focus {
 }
 
 
-@media screen and (min-width: 960px) and (min-height: 500px) {
+@media screen and (min-width: 1140px) and (min-height: 500px) {
     .wrapper {
         flex-direction: column;
         justify-content: center;
@@ -287,10 +287,16 @@ button:focus {
         border-radius: 10px;
     }
 
+    .breakline {
+        flex-basis: 100%;
+    }
+
     #biglietto {
         position: static;
         flex-basis: 200px;
         width: 500px;
+        border: 0;
+        border-radius: 15px;
         /* DEBUG */
         opacity: 1;
     }
