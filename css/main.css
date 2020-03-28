@@ -210,6 +210,7 @@ button:focus {
     .wrapper {
         width: 485px;
         max-width: 85%;
+        padding-top: 15px;
     }
 
     .container {
