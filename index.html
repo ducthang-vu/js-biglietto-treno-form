@@ -10,13 +10,13 @@
 </head>
 <body>
     
-    <div class="wrapper">
-        <header class="header container red">
-            <h1 class="title text-center">Calcola il prezzo del tuo biglietto</h1>
+    <div class="wrapper flex f-wrap central">
+        <header class="header red">
+            <h1 class="title container text-center">Calcola il prezzo del tuo biglietto</h1>
         </header>
 
-        <div class="dati-input container white">
-            <div class="row input-row flex f-wrap">
+        <div class="dati-input white">
+            <div class="row input-row container flex f-wrap">
                 <div class="col flex f-wrap">
                     <label for="nome">Nome e cognome</label>
                     <input id="nome" type="text" 
@@ -41,19 +41,19 @@
                 </div>
             </div>
 
-            <div class="row button-row flex f-wrap">
+            <div class="row button-row flex f-wrap central">
                 <button class="btn green" id="bottoneGenera">Genera</button>
                 <button class="btn red" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
 
-        <section id="biglietto" class="hidden container text-center pale-yellow">
-            <hgroup class="biglietto-header">
+        <section id="biglietto" class="hidden  text-center pale-yellow">
+            <hgroup class="biglietto-header container">
                 <h2 class="title">Il tuo biglietto</h2>
                 <h3>Dettagli passeggeri</h3>
             </hgroup>
 
-            <div class="contenuti">
+            <div class="contenuti container">
                 <div class="nome">
                     <h2>Nome passeggero</h2>
                     <h3 id="nome-passeggero"></h3>
