@@ -28,6 +28,7 @@ button:focus {
 
 /* UTILITIES */
 .container {
+    margin: auto;
     padding: 3px;
 }
 
@@ -71,8 +72,12 @@ button:focus {
     opacity: 1;
 }
 
+.white {
+    background: #fff;
+}
+
 .hidden {
-    opacity: 0; 
+    /* opacity: 0;  */
 }
 
 
@@ -180,10 +185,33 @@ button:focus {
 }
 
 .offerta-table {
-    margin: auto;
+    width: 100%;
 }
 
 .offerta th,
 .offerta td {
     width: 25%;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 576px) {
+    .wrapper {
+        background-image: url('../img/background.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 485px;
+        max-width: 85%;
+    }
+
+    
+
+    #biglietto {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
