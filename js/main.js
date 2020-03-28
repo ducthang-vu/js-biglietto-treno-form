@@ -19,13 +19,8 @@ bottoneGenera.addEventListener('click',
     function() {
         // Ottieni valori input utente
         var nome = document.getElementById('nome').value;
-        //console.log(nome); 
-
         var kmDaPercorrere = document.getElementById('km').value;
-        //console.log(kmDaPercorrere); 
-
         var fasciaEta = document.getElementById('fascia-eta').value;
-        //console.log(fasciaEta); 
 
         // Calcolo biglietto
         var prezzoKm = 0.21;

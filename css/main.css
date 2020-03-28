@@ -39,7 +39,7 @@ button:focus {
 }
 
 .red {
-    background: #a6160a;
+    background: rgb(166, 22, 10);
 }
 
 .flex {
@@ -174,7 +174,7 @@ button:focus {
     content: '';
     width: 50%;
     height: 2px;
-    background: black;
+    background: #000;
 }
 
 .contenuti h2 {
