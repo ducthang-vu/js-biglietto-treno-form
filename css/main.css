@@ -1,5 +1,6 @@
 /* GENERAL */
 html {
+    /* WARNING: Not working with EDGE */
     scroll-behavior: smooth;
   }
 
@@ -261,7 +262,7 @@ button:focus {
         flex-direction: column;
         justify-content: center;
         padding: 0;
-        width: 970px;
+        width: 1000px;
         height: 100vh;
         overflow: hidden;
         background-size: cover;

@@ -62,14 +62,18 @@ bottoneGenera.addEventListener('click',
         // Mostra biglietto
         container.classList.remove('hidden')
         container.classList += ' show'
+
+        // Scrolling to the bottom of the page
+        window.scroll(0, document.getElementsByTagName('body')[0].scrollHeight)
     }   
-);
+)
 
 
 // Reset biglietto
 buttonCancel.addEventListener('click', 
     function() {
         // A function resetting to default value input and select elements
+
         document.getElementById('nome').value = ''
         document.getElementById('km').value = ''
         document.getElementById('fascia-eta').value = 'minorenne'
@@ -82,6 +86,10 @@ buttonCancel.addEventListener('click',
         document.getElementById('carrozza').innerHTML = ''
         document.getElementById('codice-cp').innerHTML = ''
         document.getElementById('costo').innerHTML = ''
+
+        // Scrolling to the top of the page
+        // WARNING: NOT WORKING WITH FIREFOX
+        window.scroll(0, 0)
     }
 )
 
