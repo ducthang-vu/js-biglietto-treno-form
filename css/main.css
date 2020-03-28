@@ -188,12 +188,8 @@ button:focus {
     font-size: 250%;
 }
 
-.offerta-table {
-    width: 100%;
-}
-
-.offerta th,
-.offerta td {
+.offerta-table th,
+.offerta-table td {
     width: 25%;
 }
 
