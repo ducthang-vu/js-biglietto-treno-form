@@ -3,11 +3,6 @@ html {
     scroll-behavior: smooth;
   }
 
-  /* a, a:visited {
-    text-decoration: none;
-    color: inherit;
-  } */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,14 +27,6 @@ button:focus {
     margin: auto;
     width: 100%;
     max-width: 400px;
-}
-
-.pale-green {
-    background: rgb(127, 156, 156);
-}
-
-.pale-purple {
-    background: rgb(218, 209, 237);
 }
 
 .pale-yellow {
@@ -79,7 +66,7 @@ button:focus {
 }
 
 .hidden {
-    /* opacity: 0;  */
+    opacity: 0; 
 }
 
 
@@ -218,8 +205,8 @@ button:focus {
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 15px;
     }
+
     .wrapper {
         width: 485px;
         max-width: 85%;
@@ -271,14 +258,36 @@ button:focus {
 }
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) and (min-height: 500px) {
     .wrapper {
-        display: flex;
         flex-direction: column;
-        padding: 30px;
+        justify-content: center;
+        padding: 0;
         width: 970px;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
     }
 
-    .header
+    .header {
+        width: 400px;
+        flex-basis: 80px;
+        margin-right: 50px;
+    }
 
-    
+    .dati-input {
+        width: 400px;
+        flex-basis: 350px;
+        margin-right: 50px;
+    }
+
+    .button-row .btn {
+        border-radius: 10px;
+    }
+
+    #biglietto {
+        position: static;
+        flex-basis: 200px;
+        width: 500px;
+    }
+}
