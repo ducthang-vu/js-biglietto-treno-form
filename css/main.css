@@ -57,6 +57,10 @@ button:focus {
     text-align: center;
 }
 
+.relative {
+    position: relative;
+}
+
 .show {
     opacity: 1;
 }
@@ -154,7 +158,6 @@ button:focus {
 
 /* BIGLIETTO */
 #biglietto {
-    position: relative;
     bottom: 10px;
     padding: 15px 10px 30px;
     border-top: 4px dashed #000;
@@ -162,7 +165,6 @@ button:focus {
 }
 
 .biglietto-header {
-    position: relative;
     margin-bottom: 30px;
 }
 
@@ -196,6 +198,7 @@ button:focus {
 .offerta td {
     width: 25%;
 }
+
 
 
 /* RESPONSIVE */
@@ -297,8 +300,6 @@ button:focus {
         width: 500px;
         border: 0;
         border-radius: 15px;
-        /* DEBUG */
-        opacity: 1;
     }
 }
     
