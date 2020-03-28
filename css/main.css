@@ -155,6 +155,10 @@ button:focus {
     color: #fff;
 }
 
+.button-row .btn:hover {
+    opacity: 0.9;
+}
+
 
 /* BIGLIETTO */
 #biglietto {
