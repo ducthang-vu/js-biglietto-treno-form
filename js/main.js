@@ -22,44 +22,52 @@ bottoneGenera.addEventListener('click',
         var kmDaPercorrere = document.getElementById('km').value;
         var fasciaEta = document.getElementById('fascia-eta').value;
 
-        // Calcolo biglietto
-        var prezzoKm = 0.21;
-        var costoBiglietto = prezzoKm * kmDaPercorrere;
-        var offerta = 'Biglietto Standard';
 
-        // Calcoliamo il costo e l'offerta applicata
-        if (fasciaEta == 'minorenne') {
-            // 20% sconto
-            costoBiglietto -= costoBiglietto * 0.2;
-            offerta = 'Sconto minorenne';
-        } else if (fasciaEta == 'over65') {
-            //40% sconto
-            costoBiglietto -= costoBiglietto * 0.4;
-            offerta = 'Sconto Over 65';
+        if (kmDaPercorrere <= 0 || isNaN(kmDaPercorrere)) {
+            container.classList.remove('show')
+            container.classList += ' hidden'
+            alert('Devi inserire come distanza da percorrere un numero maggiore di 0.\n\n')
         }
+        else {
+            // Calcolo biglietto
+            var prezzoKm = 0.21;
+            var costoBiglietto = prezzoKm * kmDaPercorrere;
+            var offerta = 'Biglietto Standard';
 
-        // Controllo dei decimali
-        costoBiglietto = '€ ' + costoBiglietto.toFixed(2);
+            // Calcoliamo il costo e l'offerta applicata
+            if (fasciaEta == 'minorenne') {
+                // 20% sconto
+                costoBiglietto -= costoBiglietto * 0.2;
+                offerta = 'Sconto minorenne';
+            } else if (fasciaEta == 'over65') {
+                //40% sconto
+                costoBiglietto -= costoBiglietto * 0.4;
+                offerta = 'Sconto Over 65';
+            }
 
-        // Numero random per la carrozza da 1 a 9
-        var numCarrozza = Math.floor( Math.random() * 9) + 1;
+            // Controllo dei decimali
+            costoBiglietto = '€ ' + costoBiglietto.toFixed(2);
 
-        // Numero random per codice cp da 90000 a 100000
-        var codiceCp = Math.floor( Math.random() * (100000 - 90000) ) + 90000;
+            // Numero random per la carrozza da 1 a 9
+            var numCarrozza = Math.floor( Math.random() * 9) + 1;
 
-        // Inseriamo valori nella pagina
-        document.getElementById('nome-passeggero').innerHTML = nome;
-        document.getElementById('offerta-applicata').innerHTML = offerta;
-        document.getElementById('carrozza').innerHTML = numCarrozza;
-        document.getElementById('codice-cp').innerHTML = codiceCp;
-        document.getElementById('costo').innerHTML = costoBiglietto;
+            // Numero random per codice cp da 90000 a 100000
+            var codiceCp = Math.floor( Math.random() * (100000 - 90000) ) + 90000;
 
-        // Mostra biglietto
-        container.classList.remove('hidden')
-        container.classList += ' show'
+            // Inseriamo valori nella pagina
+            document.getElementById('nome-passeggero').innerHTML = nome;
+            document.getElementById('offerta-applicata').innerHTML = offerta;
+            document.getElementById('carrozza').innerHTML = numCarrozza;
+            document.getElementById('codice-cp').innerHTML = codiceCp;
+            document.getElementById('costo').innerHTML = costoBiglietto;
 
-        // Scrolling to the bottom of the page
-        window.scroll(0, document.getElementsByTagName('body')[0].scrollHeight)
+            // Show ticket
+            container.classList.remove('hidden')
+            container.classList += ' show'
+
+            // Scrolling to the bottom of the page
+            window.scroll(0, document.getElementsByTagName('body')[0].scrollHeight)
+        }
     }   
 )
 
