@@ -23,11 +23,11 @@ bottoneGenera.addEventListener('click',
         var fasciaEta = document.getElementById('fascia-eta').value;
 
 
-        if (kmDaPercorrere <= 0 || isNaN(kmDaPercorrere)) {
+        if (kmDaPercorrere <= 0 || isNaN(kmDaPercorrere) || nome.length < 3) {
             window.scroll(0, 0)
             container.classList.remove('show')
             container.classList += ' hidden'
-            alert('Devi inserire una distanza da percorrere un numero maggiore di 0.\n\n')
+            alert('Devi inserire:\n - un nome valido; e\n - una distanza da percorrere un numero maggiore di 0.\n\n')
             kmDaPercorrere = ''
         }
         else {
