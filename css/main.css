@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: rgb(237, 237, 209);
+    background: rgb(166, 22, 10);
 }
 
 button,
@@ -167,8 +167,10 @@ button:focus {
 /* BIGLIETTO */
 #biglietto {
     bottom: 10px;
+    margin-bottom: 10px;
     padding: 15px 10px 30px;
     border-top: 4px dashed #000;
+    border-radius: 0 0 15px 15px;
 }
 
 .biglietto-header {
@@ -260,7 +262,6 @@ button:focus {
     #biglietto {
         padding-left: 15px;
         padding-right: 15px;
-        border-radius: 0 0 15px 15px;
     }
 }
 
