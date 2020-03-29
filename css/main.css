@@ -153,12 +153,16 @@ button:focus {
     font-size: 120%;
     font-weight: 700;
     color: #fff;
+    transition: opacity 1s;
 }
 
 .button-row .btn:hover {
-    opacity: 0.9;
+    opacity: 0.3;
 }
 
+.button-row .btn:disabled {
+    opacity: 0.1;
+}
 
 /* BIGLIETTO */
 #biglietto {

@@ -24,9 +24,11 @@ bottoneGenera.addEventListener('click',
 
 
         if (kmDaPercorrere <= 0 || isNaN(kmDaPercorrere)) {
+            window.scroll(0, 0)
             container.classList.remove('show')
             container.classList += ' hidden'
             alert('Devi inserire come distanza da percorrere un numero maggiore di 0.\n\n')
+            kmDaPercorrere = ''
         }
         else {
             // Calcolo biglietto
@@ -67,6 +69,9 @@ bottoneGenera.addEventListener('click',
 
             // Scrolling to the bottom of the page
             window.scroll(0, document.getElementsByTagName('body')[0].scrollHeight)
+
+            // Disable button
+            bottoneGenera.disabled = true
         }
     }   
 )
@@ -93,6 +98,9 @@ buttonCancel.addEventListener('click',
         // Scrolling to the top of the page
         // WARNING: NOT WORKING WITH FIREFOX
         window.scroll(0, 0)
+
+        // Enable button
+        bottoneGenera.disabled = false
     }
 )
 
