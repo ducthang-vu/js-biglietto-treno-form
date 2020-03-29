@@ -162,6 +162,7 @@ button:focus {
 
 .button-row .btn:disabled {
     opacity: 0.2;
+    cursor: not-allowed;
 }
 
 /* BIGLIETTO */
